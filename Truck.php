@@ -7,16 +7,17 @@
 
   protected int $storagecapacity;
   protected int $chargement=0;
-  
+  private string $energy;
 
   public function __construct(string $color, int $nbSeats, string $energy,int $storagecapacity)
     {
-      parent::__construct($color,$nbSeats,$energy);
+      parent::__construct($color,$nbSeats);
       $this->storagecapacity=$storagecapacity;
+      $this->energy=$energy;
       
     }
 
-    public function plein() {
+    public function Full() {
         if ($this->chargement < $this->storagecapacity) {
             return "in filling";
         } else {
@@ -26,7 +27,7 @@
     public function setChargement($chargement) {
         $this->chargement = $chargement;
     }
-
+    
 
      
  }

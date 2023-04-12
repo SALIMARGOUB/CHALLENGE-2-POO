@@ -13,7 +13,7 @@
     public function __construct(string $color, int $nbSeats, string $energy)
     {
         parent::__construct($color,$nbSeats);
-        $this->energy = $energy;
+        $this->setEnergy($energy);
     }
 
     public function getEnergy(): string
