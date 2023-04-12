@@ -2,9 +2,10 @@
 require_once 'Bicycle.php';
 require_once 'Car.php';
 require_once 'Truck.php';
-
-
-
+require_once 'HighWay.php';
+require_once 'MotorWay.php';
+require_once 'Skateboard.php';
+require_once 'PedestrianWay.php';
 // $bike = new Bicycle('blue',1);
 // $bike->setCurrentSpeed(20);
 
@@ -44,6 +45,19 @@ require_once 'Truck.php';
 // echo '<br> Vitesse du camion : ' . $camion->getcurrentSpeed() . ' km/h' . '<br>';
 // echo $camion->brake();
 
+// Création d'une autoroute
+$highway = new PedestrianWay();
 
+// Création de plusieurs véhicules
+$car1 = new Car('black',4,'electric');
+$bike1 = new Bicycle('green',1);
+$skateboard1 = new Skateboard('red',1);
+$skateboard2 = new Skateboard('pink',1);
 
+// Ajout d'une voiture à l'autoroute
+
+$highway->addVehicule($skateboard1); 
+
+// Affichage des véhicules actuellement sur l'autoroute
+var_dump($highway->getCurrentVehicules()); 
 

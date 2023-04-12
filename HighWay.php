@@ -1,11 +1,12 @@
 <?php
 
 abstract class HighWay{
- abstract function addVehicule(Vehicule $vehicule);
  public array $currentVehicules;
  public int $nbLane;
  public int $maxSpeed;
 
+  abstract function addVehicule(Vehicule $vehicule);
+ 
 
     public function __construct(int $nbLane, int $maxSpeed) {
         $this->nbLane = $nbLane;
@@ -45,6 +46,10 @@ abstract class HighWay{
     {
         $this->nbLane = $maxSpeed;
     }
+    public function get_class(){
 
+
+
+    }
 
 }
