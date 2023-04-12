@@ -2,8 +2,10 @@
 
 // Vehicle.php
 
-class Vehicule
+ class Vehicule
 {
+
+
  
     protected string $color;
 
