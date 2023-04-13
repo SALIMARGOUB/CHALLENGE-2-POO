@@ -28,7 +28,24 @@ require_once 'PedestrianWay.php';
 // $tesla = new Car('black', 4,'electric');
 // $ferrari = new Car('red', 2,'essence');
 // $vehicle = new Vehicule('pink', 4,'essence');
-// $car = new Car('green', 4, 'electric');
+
+
+// utilisation du frein a main
+$car = new Car('green', 4, 'electric');
+$car->setCurrentSpeed(12);
+//$car->setParkBrake(false);
+
+var_dump($car);
+
+// Moving car
+$car->start(); // Tente de démarrer la voiture
+
+echo '<br> Vitesse de la voiture: ' . $car->getcurrentSpeed() . ' km/h' . '<br>';
+echo $car->brake();
+echo '<br> Vitesse de la voiture : ' . $car->getcurrentSpeed() . ' km/h' . '<br>';
+echo $car->brake();
+
+//var_dump(Car::ALLOWED_ENERGIES);
 // // echo $car->forward();
 
 
@@ -45,19 +62,28 @@ require_once 'PedestrianWay.php';
 // echo '<br> Vitesse du camion : ' . $camion->getcurrentSpeed() . ' km/h' . '<br>';
 // echo $camion->brake();
 
-// Création d'une autoroute
-$highway = new PedestrianWay();
+// // Création d'une autoroute
+// $highway = new PedestrianWay();
 
-// Création de plusieurs véhicules
-$car1 = new Car('black',4,'electric');
-$bike1 = new Bicycle('green',1);
-$skateboard1 = new Skateboard('red',1);
-$skateboard2 = new Skateboard('pink',1);
+// // Création de plusieurs véhicules
+// $car1 = new Car('black',4,'electric');
+// $bike1 = new Bicycle('green',1);
+// $skateboard1 = new Skateboard('red',1);
+// $skateboard2 = new Skateboard('pink',1);
 
-// Ajout d'une voiture à l'autoroute
+// // Ajout d'une voiture à l'autoroute
 
-$highway->addVehicule($skateboard1); 
+// $highway->addVehicule($bike1); 
 
-// Affichage des véhicules actuellement sur l'autoroute
-var_dump($highway->getCurrentVehicules()); 
+// echo "Véhicules présents sur la PedestrianWay : " . var_dump(", ", $highway->getCurrentVehicules()). "\n";
+
+// // Affichage des véhicules actuellement sur l'autoroute
+// var_dump($highway->getCurrentVehicules()); 
+
+
+
+
+
+
+
 
