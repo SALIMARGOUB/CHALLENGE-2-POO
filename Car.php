@@ -33,8 +33,6 @@
 
         }
         
-          
-
         if($this->currentSpeed > 0){
 
          return "let's go";

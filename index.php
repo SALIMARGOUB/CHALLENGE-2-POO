@@ -35,10 +35,16 @@ $car = new Car('green', 4, 'electric');
 $car->setCurrentSpeed(12);
 //$car->setParkBrake(false);
 
-var_dump($car);
-
+try {
+    $car->start();
+} catch(Exception $e){
+    // code to manage exceptions
+    echo "Exception: ". $e->getMessage() . "n";
+} finally {
+    echo "Ma voiture roule comme un donut!\n";
+}
 // Moving car
-$car->start(); // Tente de démarrer la voiture
+ // Tente de démarrer la voiture
 
 echo '<br> Vitesse de la voiture: ' . $car->getcurrentSpeed() . ' km/h' . '<br>';
 echo $car->brake();

@@ -13,6 +13,6 @@ final class MotorWay extends HighWay
         if ($vehicule instanceof Car) {
             $this->currentVehicules[] = $vehicule;
         } 
-    }
+    }     
 
 }
