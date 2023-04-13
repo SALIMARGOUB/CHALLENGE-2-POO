@@ -2,7 +2,7 @@
 
 // Vehicle.php
 
- class Vehicule
+ class Vehicule 
 {
 
 
@@ -15,12 +15,14 @@
 
     protected int $nbWheels;
 
-    protected int $storagecapacity;
+   
 
     public function __construct(string $color, int $nbSeats)
     {
         $this->color = $color;
         $this->nbSeats = $nbSeats;
+       
+        
     }
     public function forward(): string
     {
@@ -80,13 +82,7 @@
     {
         $this->nbWheels = $nbWheels;
     }
-    public function getStorageCapacity():int {
-        return $this->storagecapacity;
-    }
-    public function setStorageCapacity(int $storagecapacity):void{
-
-         $this->storagecapacity=$storagecapacity;
-    }
+ 
 
     
 }

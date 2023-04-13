@@ -2,17 +2,17 @@
 
 final class MotorWay extends HighWay
 {
-    public function __construct() {
-        $this->setNbLane(4);
-        $this->setMaxSpeed(130);
-        
-    }
+    protected array $currentVehicles = [];
+    protected int $nbLane = 4;
+    protected int $maxSpeed = 130;
     
-    public function addVehicule(Vehicule $vehicule): void
+    public function addVehicule(Vehicule $vehicule)
     {
         if ($vehicule instanceof Car) {
             $this->currentVehicules[] = $vehicule;
-        } 
+        } return "votre vehicule est autorisé  circuler";
+     
+    return "votre vehicule est inertdit sur cette voie";
     }     
 
 }

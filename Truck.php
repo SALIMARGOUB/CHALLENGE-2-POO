@@ -28,7 +28,13 @@
         $this->chargement = $chargement;
     }
     
+    public function getStorageCapacity():int {
+        return $this->storagecapacity;
+    }
+    public function setStorageCapacity(int $storagecapacity):void{
 
+         $this->storagecapacity=$storagecapacity;
+    }
      
  }
     
