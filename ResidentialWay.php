@@ -3,7 +3,7 @@
 final class ResidentialWay extends HighWay
 
 {
-    protected array $currentVehicles = [];
+   
     protected int $nbLane = 2;
     protected int $maxSpeed = 50;
 

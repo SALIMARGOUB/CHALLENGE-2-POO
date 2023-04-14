@@ -7,6 +7,7 @@ require_once 'MotorWay.php';
 require_once 'Skateboard.php';
 require_once 'PedestrianWay.php';
 require_once 'Lightable.interface.php';
+require_once 'Speedometer.php';
 
 // //test lumiere velo
 // $bike = new Bicycle('blue',1);
@@ -72,16 +73,19 @@ require_once 'Lightable.interface.php';
 // echo $camion->brake();
 
 // // Création d'une autoroute et Création de plusieurs véhicules
-$car1 = new Car('black',4,'electric');
+//$car1 = new Car('black',4,'electric');
 //$bike1 = new Bicycle('green',1);
 // $skateboard1 = new Skateboard('red',1);
 // $skateboard2 = new Skateboard('pink',1);
 
 // // Ajout d'une voiture à l'autoroute
-$curb= new PedestrianWay();
-echo $curb->addVehicule($car1); 
+// $curb= new PedestrianWay();
+// echo $curb->addVehicule($skateboard1);
 // // Affichage des véhicules actuellement sur l'autoroute
 
+
+// //conversion des Km_Miles_Km
+// echo Speedometer::convertKmToMiles(10);
 
 
 

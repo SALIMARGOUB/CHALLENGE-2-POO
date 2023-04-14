@@ -3,7 +3,7 @@
 final class PedestrianWay extends HighWay {
 
   
-    protected array $currentVehicules = [];
+    
     protected int $nbLane = 1;
     protected int $maxSpeed = 10;
 
